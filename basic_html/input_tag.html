@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> input_tag </title>
+</head>
+<body>
+    <!-- from 안에 input이 들어가며, 여러 타입으로 용도별 변경 가능 -->
+    <h1> input 태그 with types </h1>
+    <form action="">
+        text : <input type="text"/>
+        <br/>
+        password : <input type="password"/>
+        <br/>
+        submit : <input type="submit"/>
+        <br/>
+        button : <input type="button"/>
+        <br/>
+        reset : <input type="reset"/>
+        <br/>
+        file : <input type="file"/>
+        <br/>
+        <!-- 네모상자 -->
+        checkbox : <input type="checkbox"/>
+        <br/>
+        <!-- 동그라미, 다중 선택 불가 -->
+        radio : <input type="radio"/>
+        <br/>
+        hidden : <input type="hidden"/>
+        <br/>
+    </form>
+
+
+    <br/>
+
+    <h1> input 태그 구체적인 내용 </h1>
+    <form action="">
+        <!-- value로 버튼 안에 텍스트를 넣을 수 있다. -->
+        <input type="button", value="버튼 안의 텍스트"/>
+        <br/>
+        <br/>
+        <!-- radio는 여러개를 동시 선택할 수 없다. -->
+        <input type="radio", name="a"/> select1
+        <input type="radio", name="a"/> select2
+        <input type="radio", name="a"/> select3
+        <!-- name으로 radio들을 분류할 수 있다. -->
+        <input type="radio", name="b"/> different name radio
+    </form>
+</body>
+</html>

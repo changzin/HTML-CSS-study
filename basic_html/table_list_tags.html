@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> table, list 등의 태그 </title>
+</head>
+<body>
+
+    <!-- ordered list, 숫자가 붙여서 출력된다. -->
+    <h1> ol 출력결과</h1>
+    <ol> 
+        <li> ol 리스트 원소 하나</li>
+        <li> ol 리스트 원소 둘</li>
+        <li> ol 리스트 원소 셋</li>
+    </ol>
+
+    <br/>
+
+    <!-- unordered list -->
+    <h1> ul 출력결과</h1>
+    <ul> 
+        <li> ul 리스트 원소 하나</li>
+        <li> ul 리스트 원소 둘</li>
+        <li> ul 리스트 원소 셋</li>
+    </ul>
+
+    <br/>
+
+    <!-- table  -->
+    <h1> table 출력결과</h1>
+    <!-- border하면 테두리 생긴다. -->
+    <table border=1 style="margin-left: 20px;">
+        <!-- thead, tbody, tfoot으로 분리하는 것에 의의가 있다. -->
+        <thead style="background-color:yellowgreen;">
+            <tr>
+                <th> thead1 </th>
+                <th> thead2 </th>
+                <th> thead3 </th>
+                <th> thead4 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- td는 table data이다. -->
+                <td> tbody1 </td>
+                <td> tbody2 </td>
+                <td> tbody3 </td>
+                <td> tbody4 </td>
+            </tr>
+            <tr>
+                <!-- colspan을 넣으면 넣은 수만큼 칸을 병합하여 차지한다. -->
+                <td colspan="3"> tbody5 </td>
+                <td> tbody6 </td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: bisque;">
+            <tr>
+                <td> tfooter 1 </td>
+                <td> tfooter 2 </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
