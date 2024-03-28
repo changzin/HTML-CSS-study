@@ -29,13 +29,22 @@
         <br/>
         hidden : <input type="hidden"/>
         <br/>
+        date : <input type="date"/>
+        <br/>
+        color : <input type="color"/>
+        <br/>
+        
     </form>
 
 
     <br/>
 
     <h1> input 태그 구체적인 내용 </h1>
-    <form action="">
+    <!-- action은 url이다. 아래 input들의 name이 query parameter의 key가 된다.(단순히 보냈을 때) -->
+    <!-- method로는 post, get, dialog(상호작용 태그 관련) 가능하다. -->
+    <!-- enctype으로는 request header에 들어가는 Content-Type을 정할 수 있다. (applicaiton/json은 지원하지 않는다.) -->
+    <!-- form 안에 있는 submit을 누르면, 안에 있는 것들 중 보낼 수 있는 것들은 전부 보내진다. (name 필요) -->
+    <form action="", method="get", enctype="text/plain">
         <!-- value로 버튼 안에 텍스트를 넣을 수 있다. -->
         <input type="button", value="버튼 안의 텍스트"/>
         <br/>
@@ -46,6 +55,19 @@
         <input type="radio", name="a"/> select3
         <!-- name으로 radio들을 분류할 수 있다. -->
         <input type="radio", name="b"/> different name radio
+        <!-- 이건 게시판 내용을 적는 것과 같은 느낌. -->
+        <textarea name="mytextarea" id="" cols="30" rows="10"></textarea>
+        <input type="submit", value="제출"/>
+        
+        <!-- 드롭다운이다. name=value 형태로 보내진다. -->
+        <select name="dropDown" id="">
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+            <option value="d">d</option>
+        </select>
     </form>
+
+    </select>
 </body>
 </html>

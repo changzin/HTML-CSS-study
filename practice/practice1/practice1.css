@@ -1,0 +1,49 @@
+h1, h2, h3, p, body {
+    padding:0;
+    margin:0    
+}
+
+h1 {
+    font-size: 16px;
+}
+td {
+    font-size: 12px;
+    height: 26px;
+    text-align: center;
+}
+
+.screen{
+    margin: 0 auto;
+}
+
+.sub {
+    color: green;
+    font-size: 12px;
+    font-weight:bold;
+}
+.big_box{
+    width: 800px;
+    margin: 0 auto;
+}
+.checkEmpty{
+    color: red;
+    font-size:small;
+}
+
+.label{
+    background-color: beige;
+}
+
+.long_input{
+    width: 400px;
+}
+
+.row{
+    border-style:solid;
+    border-color:chocolate;
+    border-width: 0.1cap;
+}
+
+.btn {
+    width: 50px;
+}

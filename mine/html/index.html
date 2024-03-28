@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 상대 경로를 지정하여 css 파일 가져온다. -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1> Title </h1>
+
+    <ul>
+        <li> 허허허 </li>
+        <li> 허허허 </li>
+        <li> 허허허 </li>
+    </ul>
+
+    <!-- action은 url이다. 아래 input들의 name이 query parameter의 key가 된다.(단순히 보냈을 때) -->
+    <!-- method로는 post, get, dialog(상호작용 태그 관련) 가능하다. -->
+    <!-- enctype으로는 request header에 들어가는 Content-Type을 정할 수 있다. (applicaiton/json은 지원하지 않는다.) -->
+
+    <form action="http://localhost:8080/model-attribute-v2", method="post", enctype="multipart/form-data1">
+        <!-- text라면, name=key, 입력 값들이 value가 된다. -->
+        <label for="">이름</label> 
+        <input type="text", name="username"/>
+        <br/>
+        <label for="">나이</label> 
+        <input type="text" name="age"/>
+        <br/>
+        <!-- checkbox라면, name=key, 체크 여부로 on, off로 나뉘어서 들어간다. -->
+        <input type="checkbox", name="checkbox1"/>
+        <input type="file" name="file"/>
+        <input type="submit" value="제출"/>
+    </form>
+
+    <br/>
+    <br/>
+
+    <!-- 인풋으로 만드는 버튼과 태그로 갈기는 버튼이 있다. -->
+    <!-- 둘 다 type, action 등 같은 역할을 수행 가능하다. -->
+    <!-- 차이점으론 button은 self-contained tag가 아니기 때문에 버튼 안에 이미지 등을 편하게 삽입하여 디자인이 가능하다. -->
+    <input type="button"/>
+    <button type="button"></button>
+</body>
+</html>
