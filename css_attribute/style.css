@@ -1,0 +1,26 @@
+#h1_1 {font-size: 150%;}
+#h1_2 {font-size: 1em;}
+#h1_3 {font-size: 10px;}
+
+/* rem은 상대 단위 (최상위의 font-size를 기준으로 곱하여 정해진다) */
+div{
+    height: 50px;
+    width: 50px;
+    background-color: aquamarine;
+    margin:1rem;
+}
+
+
+#box {
+    background-color: cadetblue; height:300rem; width:20rem;
+    position: relative;
+}
+
+/* relative 포지션은 padding과 margin을 무시하고 움직일 수 있다. (현 위치 기준) */
+#rel {position: relative; right:30px;}
+/* absolute 포지션은 position이 static이 아닌 부모 클래스 기준으로 움직임*/
+    /* 위의 relative는 지 위치에서 왼쪽으로 30 움직임 */
+    /* 얘는 id=box의 맨 오른쪽에서 10만큼 떨어진 곳으로 움직인다. */
+#absol {position: absolute; right:10px;}
+/* fixed position은 걍 화면에 딱 박혀버림 */
+#fixed {position: fixed; margin-top: 01px;}

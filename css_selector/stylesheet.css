@@ -1,0 +1,25 @@
+/* h1 {color: red;} */
+
+/* id 선택자 */
+#id_h1 {color:aqua;}
+
+/* 클래스 선택자 */
+.class_h1 {color:antiquewhite};
+
+/* hover 등 상태에 따른 선택자 */
+#hover_h1:hover{color:blue;}
+
+
+/* #child {background-color:cornflowerblue; height: 300px; width: 200px;} */
+/* 자식 선택자 */
+#parent {background-color: chartreuse; height: 500px; width: 500px;}
+#parent #child {background-color:cornflowerblue; height: 300px; width: 200px;}
+div h1 {font-size: 35px;}
+
+/* input 상태에 의한 선택자 */
+#input1:enabled { background-color: black;}
+#input1:active { background-color: yellow;}
+
+/* 자손 선택자 2 */
+li:first-child{color: yellow;}
+li:last-child{color: red;}
